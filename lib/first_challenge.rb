@@ -15,11 +15,13 @@ def first_challenge
 
  contacts.each do |person, data|
      data.each do |attribute, value|
-  puts "#{person}: #{data}"
+       if attribute == :favorite_icecream_flavors
+      value.each do |flavor|
+  puts "#{flavor}"
 end
-
-
-  #remember to return your newly altered contacts hash!
+end
+end
+ #remember to return your newly altered contacts hash!
   contacts
 end
 
